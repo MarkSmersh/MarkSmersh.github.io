@@ -32,7 +32,7 @@
     }
 
     function requestApply() {
-        regex = new RegExp("(text)=([A-Za-z0-9=+'\"]*)")
+        regex = new RegExp("(text)=([A-Za-z0-9=+'\"\\/]*)")
         base64 = regex.exec(window.location.search)[2]
 
         text = b64DecodeUnicode(base64)
